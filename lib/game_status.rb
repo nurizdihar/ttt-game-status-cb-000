@@ -26,7 +26,7 @@ def full?(board)
       filled += 1
     end
   end
-  if filled = 9
+  if filled == 9
     return true
   else
     return false
