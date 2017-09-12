@@ -52,3 +52,15 @@ def over?(board)
     return false
   end
 end
+
+def winner(board)
+  if won?(board)
+    combination = won?(board)
+    if combination[0] == "X"
+      return "X"
+    elsif combination[0] == "O"
+      return "O"
+    end
+  end
+end
+    
