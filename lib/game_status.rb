@@ -14,7 +14,7 @@ def won?(board)
       return combination
     end
   end
-  if state = 0
+  if state == 0
     return false
   end
 end
