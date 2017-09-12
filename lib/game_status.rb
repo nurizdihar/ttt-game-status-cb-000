@@ -19,7 +19,7 @@ def won?(board)
   end
 end
 
-def full(board)
+def full?(board)
   filled = 0
   board.each do |position|
     if position == "X" || position == "O"
