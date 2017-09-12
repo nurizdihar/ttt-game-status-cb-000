@@ -22,13 +22,13 @@ end
 def full?(board)
   filled = 0
   board.each do |position|
-    if board[position] == "X" || board[position] == "O"
+    if position == "X" || position == "O"
       filled += 1
     end
   end
   if filled = 9
     return true
-  elsif filled < 9
+  else
     return false
   end
 end
