@@ -22,10 +22,8 @@ end
 def full?(board)
   filled = 0
   board.each do |position|
-    if position == "X" || position == "O"
+    if board[position] == "X" || board[position] == "O"
       filled += 1
-    elsif position == " " || position == ""
-      filled += 0
     end
   end
   if filled = 9
